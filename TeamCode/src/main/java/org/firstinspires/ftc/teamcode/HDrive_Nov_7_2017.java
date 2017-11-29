@@ -72,7 +72,7 @@ public class HDrive_Nov_7_2017 extends OpMode {
         }
 
         /* CONTROL THE LIFT GOING UP AND DOWN */
-        if(liftMotor.getCurrentPosition() > LIFT_MAX_HEIGHT){
+        if(liftMotor.getCurrentPosition() > LIFT_MAX_HEIGHT && gamepad2.dpad_up){
             liftMotor.setPower(0);
         } else if(gamepad2.dpad_up){
             liftMotor.setPower(0.5);
